@@ -5,7 +5,7 @@ Var
 
 Inicio
       EscrevaL ("------------------------------")
-      EscrevaL ("        AUTOESCOLA            ")
+      EscrevaL ("       AUTOESCOLA X           ")
       EscrevaL ("------------------------------")
       Escreva ("Primeira nota: ")
       Leia (N1)
@@ -13,7 +13,7 @@ Inicio
       Leia (N2)
       media <- (N1 + N2)/2
       EscrevaL ("----------- STATUS -----------")
-      EscrevaL ("MÉDIA: ",media)
+      EscrevaL ("MÃ‰DIA: ",media)
       Se (media >= 7) entao
       EscrevaL ("ALUNO APROVADO")
       EscrevaL ("------------------------------")
