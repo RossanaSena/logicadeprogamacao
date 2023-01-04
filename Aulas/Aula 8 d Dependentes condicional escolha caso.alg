@@ -13,7 +13,7 @@ inicio
    Leia (S)
    Escreva ("Qual é a quantidade de dependentes? ")
    Leia (D)
-   Escolha D
+   Escolha Depen
            Caso 0
                 NS <-  S + (S*0.05)
            Caso 1, 2, 3
@@ -23,5 +23,5 @@ inicio
            OutroCaso
                 NS <-  S + (S * 0.18)
    FimEscolha
-   EscrevaL ("O novo salário de ", N, " será de R$",NS)
+   EscrevaL ("O novo salário de ", N, " será de R$", NS)
 fimalgoritmo
