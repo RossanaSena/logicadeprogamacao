@@ -13,7 +13,7 @@ Inicio
       Leia (N2)
       media <- (N1 + N2)/2
       EscrevaL ("----------- STATUS -----------")
-      EscrevaL ("MÃ‰DIA: ",media)
+      EscrevaL ("MÉDIA: ",media)
       Se (media >= 7) entao
       EscrevaL ("ALUNO APROVADO")
       EscrevaL ("------------------------------")
