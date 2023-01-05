@@ -1,43 +1,30 @@
-Algoritmo "AproveitamentoAluno"
+Algoritmo "Jogo"
 
 Var
-N1, N2, media: real
+TA, TB, dif: real
 
 Inicio
 EscrevaL ("------------------------------")
-EscrevaL ("        Aproveitamento        ")
+EscrevaL ("     Partida de futebol       ")
 EscrevaL ("------------------------------")
-Escreva ("Primeira nota: ")
-Leia (N1)
-Escreva ("Segunda nota: ")
-Leia (N2)
-media <- (N1 + N2)/2
+Escreva ("Quantos pontos o Time A fez? ")
+Leia (TA)
+Escreva ("Quantos pontos o Time B fez? ")
+Leia (TB)
+dif <- (TA - TB)
 EscrevaL ("----------- STATUS -----------")
-EscrevaL ("MÉDIA: ",media)
-Se (media >= 9) e (media <= 10) entao
-   EscrevaL ("Aproveitamento A")
+EscrevaL ("Diferença: ",dif)
+Se (dif >= 5) entao
+   EscrevaL ("Goleada")
    EscrevaL ("------------------------------")
 Senao
-   Se (media >= 8) e (media <= 8.9) entao
-      EscrevaL ("Aproveitamento B")
+   Se (dif >= 1) e (dif <= 4) entao
+      EscrevaL ("Partida normal")
       EscrevaL ("------------------------------")
    Senao
-      Se (media >= 7) e (media <= 7.9) entao
-         EscrevaL ("Aproveitamento C")
+      Se (dif = 0) entao
+         EscrevaL ("Empate")
          EscrevaL ("------------------------------")
-      Senao
-         Se (media >= 6) e (media <= 6.9) entao
-            EscrevaL ("Aproveitamento D")
-            EscrevaL ("------------------------------")
-         Senao
-            Se (media >= 5) e (media <= 5.9) entao
-               EscrevaL ("Aproveitamento D")
-               EscrevaL ("------------------------------")
-            Senao
-                  EscrevaL ("Aproveitamento F")
-                  EscrevaL ("------------------------------")
-            FimSe
-         FimSe
       FimSe
    FimSe
 FimSe
