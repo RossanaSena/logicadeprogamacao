@@ -23,13 +23,13 @@ inicio
       Caso 3
            Valor <- 50
       Caso 4
-           Escreva ("Qual o valor da doação")
+           Escreva ("Qual o valor da doação? R$")
            Leia (Valor)
       Caso 5
           Valor <- 0
    FimEscolha
       EscrevaL ("-----------------------------------------")
-      EscrevaL        ("SUA DOAÇÃO FOI DE R$ ", Valor)
-      EscrevaL              ("MUITO OBRIGADO!")
+      EscrevaL ("       SUA DOAÇÃO FOI DE R$",Valor)
+      EscrevaL ("            MUITO OBRIGADO!              ")
       EscrevaL ("-----------------------------------------")
 fimalgoritmo

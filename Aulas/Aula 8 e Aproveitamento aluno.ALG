@@ -37,7 +37,6 @@ Senao
                Se (media >= 4.9) e (media <= 0) entao
                   EscrevaL ("Aproveitamento F")
                   EscrevaL ("------------------------------")
-                  FimSe
                FimSe
             FimSe
          FimSe
