@@ -1,45 +1,33 @@
-Algoritmo "AproveitamentoAluno"
+Algoritmo "Jogo"
 
 Var
-N1, N2, media: real
+TA, TB, dif: real
 
 Inicio
 EscrevaL ("------------------------------")
-EscrevaL ("        Aproveitamento        ")
+EscrevaL ("     Partida de futebol       ")
 EscrevaL ("------------------------------")
-Escreva ("Primeira nota: ")
-Leia (N1)
-Escreva ("Segunda nota: ")
-Leia (N2)
-media <- (N1 + N2)/2
-EscrevaL ("----------- STATUS -----------")
-EscrevaL ("MÉDIA: ",media)
-Se (media >= 9) e (media <= 10) entao
-   EscrevaL ("Aproveitamento A")
-   EscrevaL ("------------------------------")
+Escreva ("Quantos gols o Time A fez? ")
+Leia (TA)
+Escreva ("Quantos gols o Time B fez? ")
+Leia (TB)
+Se (TA > TB) entao
+   dif <- TA - TB
 Senao
-   Se (media >= 8) e (media <= 8.9) entao
-      EscrevaL ("Aproveitamento B")
-      EscrevaL ("------------------------------")
-   Senao
-      Se (media >= 7) e (media <= 7.9) entao
-         EscrevaL ("Aproveitamento C")
-         EscrevaL ("------------------------------")
-      Senao
-         Se (media >= 6) e (media <= 6.9) entao
-            EscrevaL ("Aproveitamento D")
-            EscrevaL ("------------------------------")
-         Senao
-            Se (media >= 5) e (media <= 5.9) entao
-               EscrevaL ("Aproveitamento D")
-               EscrevaL ("------------------------------")
-            Senao
-                  EscrevaL ("Aproveitamento F")
-                  EscrevaL ("------------------------------")
-            FimSe
-         FimSe
-      FimSe
-   FimSe
+   dif <- TB - TA
 FimSe
-
+   EscrevaL ("----------- SALDO ---------")
+   EscrevaL ("Saldo de pontos:",dif)
+   Escolha dif
+   Caso 0
+      EscrevaL ("Jogo com EMPATE")
+   Caso 1, 2, 3
+      EscrevaL ("Jogo com PARTIDA NORMAL")
+   Caso 4, 5, 6, 7
+      EscrevaL ("Jogo com GOLEADA")
+   OutroCaso
+      EscrevaL ("jogo com ALGO INCOMUM")
+      EscrevaL ("Verificar os dados")
+   FimEscolha
+   EscrevaL ("--------------------------")
 Fimalgoritmo
